@@ -89,10 +89,9 @@ fun JourneyScreen() {
                 textAlign = androidx.compose.ui.text.style.TextAlign.Center // Centraliza o texto
             )
         }
-        val context = LocalContext.current
         Button(onClick = {
-            showDialog = false
-            (context as? ComponentActivity)?.finish()
+            isGiveUp = true
+            showDialog = true
         },
             modifier = Modifier
                 .align(Alignment.TopCenter)
