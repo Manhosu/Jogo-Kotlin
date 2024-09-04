@@ -83,7 +83,7 @@ fun JourneyScreen() {
             colors = ButtonDefaults.buttonColors(containerColor = Color.Red)
         ) {
             Text(
-                text = "Clique Aqui",
+                text = "Clique Aqui\n$clickCount",
                 color = Color.White, // Cor do texto
                 fontSize = 16.sp, // Tamanho da fonte ajustado
                 textAlign = androidx.compose.ui.text.style.TextAlign.Center // Centraliza o texto
