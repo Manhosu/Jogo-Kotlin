@@ -89,6 +89,18 @@ fun JourneyScreen() {
                 textAlign = androidx.compose.ui.text.style.TextAlign.Center // Centraliza o texto
             )
         }
+        val context = LocalContext.current
+        Button(onClick = {
+            showDialog = false
+            (context as? ComponentActivity)?.finish()
+        },
+            modifier = Modifier
+                .align(Alignment.TopCenter)
+                .padding(top = 160.dp)
+                .size(100.dp)
+            ) {
+            Text("Desistir")
+        }
     }
 
     // Diálogo para novo jogo ou saída
